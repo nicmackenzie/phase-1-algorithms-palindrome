@@ -1,11 +1,12 @@
 function isPalindrome(word) {
   // Write your algorithm here
-  const wordInReverseArr = [];
-  for (let i = word.length - 1; i >= 0; i--) {
-    wordInReverseArr.push(word[i]);
-  }
-  const joinedWord = wordInReverseArr.join('');
-  return joinedWord === word;
+  // const wordInReverseArr = [];
+  // for (let i = word.length - 1; i >= 0; i--) {
+  //   wordInReverseArr.push(word[i]);
+  // }
+  // const joinedWord = wordInReverseArr.join('');
+  const reversedWord = word.split('').reverse().join('');
+  return reversedWord === word;
 }
 
 /* 
